@@ -1,0 +1,8 @@
+# object files
+*.o
+*.obj
+# executables (unix/linux/macos)
+# the following sequence will make a rule that says "ignore everything, but keep all directories, but also keep all files with extensions. So only files withoug extensions get ignored
+*
+!*/
+!*.*
