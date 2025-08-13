@@ -4,14 +4,14 @@
 ;  usage:    ./myexe
 
 Section .data
-   msg db "Cyber Security Course is fun", 0
+   msg db "OS Course is fun!", 0
 
 SECTION .text
    global main
    extern printf, exit
    main:
       call printmsg 
-      mov rdi, 0
+      mov rdi, 5
       call exit         
 printmsg:
       lea rdi, [msg]
