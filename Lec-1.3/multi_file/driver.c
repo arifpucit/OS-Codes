@@ -1,6 +1,6 @@
 /*
  *  Programmer: Arif Butt
- *  Course: Operating System Fundamentals
+ *  Course: Operating Systems
 */
 
 #include <stdio.h>
