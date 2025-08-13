@@ -1,6 +1,6 @@
 ;  condjump.nasm
 ;  Assemble: nasm -felf64 -g condjump.nasm
-;  Link: gcc condjump.o -o condjump
+;  Link: gcc -no-pie condjump.o -o condjump
 ;  Usage: ./condjump
 
 SECTION .data

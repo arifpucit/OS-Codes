@@ -1,7 +1,7 @@
 ;  uncondjump.nasm
 ;  Assemble: nasm -felf64 -g uncondjump.nasm
-;  Link: gcc uncondjump1.o -o uncondjump
-;  Usage: ./condjump
+;  Link: gcc -no-pie uncondjump1.o -o uncondjump
+;  Usage: ./uncondjump
 
 SECTION .data   
    msg1 db "Study Cyber Security", 0
