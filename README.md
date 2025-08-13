@@ -61,13 +61,35 @@ If you find any issues or have suggestions for improvements, feel free to:
 - Submit a pull request
 - Contact the instructor
 
-## 👨‍🏫 Instructor
+## 👨‍🏫 Meet Your Instructor
 
-**Professor Arif Butt**
-- 📧 Email: 
-  - arifpucit@gmail.com
-  - arif.excaliat@gmail.com
-- 🌐 Website: [http://arifbutt.me](http://arifbutt.me)
+### Dr. Muhammad Arif Butt
+**Assistant Professor, Department of Data Science**  
+**University of Punjab, Lahore**
+
+#### 🎓 Educational Background
+- **Pakistan Military Academy, Kakul** - Graduate
+- **MPhil Computer Science** - University of Punjab, Lahore
+- **PhD Computer Science** - University of Punjab, Lahore
+
+#### 💼 Professional Experience
+- 🎖️ **Pakistan Army** - Served in field/staff/instructional posts
+- 👨‍🏫 **Assistant Professor** - Department of Data Science
+- 🚀 **Founder** - [Excaliat](https://excaliat.com/en)
+- 🦅 **Founder** - [FalconHunt](https://falconhunt.org/)
+- 🔧 **Co-Founder** - [Tbox Solutionz](https://tboxsolutionz.com/)
+
+#### 🔬 Research Interests
+- **Embedded and Real-Time Operating Systems**
+- **Vulnerability Analysis, Binary Exploitation & Exploit Development**
+- **AI-Driven Cybersecurity and Securing AI Systems**
+
+#### 📞 Connect with Dr. Butt
+- 📧 **Email**: [arif@pucit.edu.pk](mailto:arif@pucit.edu.pk)
+- 🌐 **Website**: [https://arifbutt.me](https://arifbutt.me)
+- 📺 **YouTube**: [Learn with Arif](https://youtube.com/learnwitharif)
+- 💻 **GitHub**: [@arifpucit](https://github.com/arifpucit)
+- 💼 **LinkedIn**: [Dr. Arif Butt](https://www.linkedin.com/in/dr-arif-butt/)
 
 ## 📜 License
 
