@@ -1,0 +1,311 @@
+# GDB with GEF Tutorial Commands
+
+## Step 1: Compile the Program
+```bash
+# Compile with debugging information (-g flag is crucial)
+gcc -g -o debug_demo debug_demo.c
+
+# Optional: compile with additional debugging info and no optimization
+gcc -g3 -O0 -o debug_demo debug_demo.c
+```
+
+## Step 2: Start GDB with GEF
+```bash
+# Launch GDB with the binary
+gdb ./debug_demo
+```
+
+## Step 3: Basic GDB+GEF Commands Tutorial
+
+### 3.1 Initial Setup and Information
+```gdb
+# GEF will show enhanced interface automatically
+# Check GEF status
+gef config
+
+# Show source code (if available)
+list
+list main
+
+# Show program info
+info program
+info functions
+info variables
+```
+
+### 3.2 Setting Breakpoints
+```gdb
+# Set breakpoint at main function
+break main
+# or simply:
+b main
+
+# Set breakpoint at specific line
+break 15
+b debug_demo.c:15
+
+# Set breakpoint at function
+break factorial
+break print_info
+
+# List all breakpoints
+info breakpoints
+# or:
+i b
+```
+
+### 3.3 Running and Basic Execution Control
+```gdb
+# Start program execution
+run
+# or:
+r
+
+# GEF will show enhanced context with:
+# - Registers
+# - Stack
+# - Code
+# - Threads
+```
+
+### 3.4 Stepping Through Code
+```gdb
+# Step to next line (step over function calls)
+next
+# or:
+n
+
+# Step into function calls
+step
+# or:
+s
+
+# Continue execution until next breakpoint
+continue
+# or:
+c
+
+# Execute one assembly instruction
+nexti
+# or:
+ni
+
+# Step into at assembly level
+stepi
+# or:
+si
+```
+
+### 3.5 Examining Variables and Memory
+```gdb
+# Print variable values
+print num
+p student_name
+print gpa
+print ptr_num
+print *ptr_num
+
+# Print in different formats
+print/x num          # hexadecimal
+print/d num          # decimal  
+print/o num          # octal
+print/t num          # binary
+print/c student_name[0]  # as character
+
+# Examine memory
+x/4dw &num          # examine 4 decimal words starting at &num
+x/s student_name    # examine as string
+x/10c student_name  # examine 10 characters
+
+# Watch variables (stop when value changes)
+watch num
+watch *ptr_num
+```
+
+### 3.6 Stack and Function Analysis
+```gdb
+# Show call stack
+backtrace
+# or:
+bt
+
+# Show current frame info
+info frame
+frame
+
+# Move between stack frames
+up
+down
+
+# Show function arguments
+info args
+
+# Show local variables
+info locals
+
+# Show all variables in current scope
+info scope factorial
+```
+
+### 3.7 Advanced GEF Features
+```gdb
+# Show enhanced context (automatic in GEF)
+context
+
+# Show memory layout
+vmmap
+
+# Show heap information
+heap chunks
+heap bins
+
+# Search for patterns in memory
+grep "Alice"
+search-pattern "Alice"
+
+# Show assembly with syntax highlighting
+disassemble main
+disas factorial
+
+# Show registers with colors
+registers
+```
+
+### 3.8 Breakpoint Management
+```gdb
+# Set conditional breakpoint
+break factorial if n > 3
+
+# Set temporary breakpoint (deleted after first hit)
+tbreak print_info
+
+# Disable/enable breakpoints
+disable 1
+enable 1
+
+# Delete breakpoints
+delete 1
+delete          # deletes all breakpoints
+```
+
+### 3.9 Modifying Variables During Debug
+```gdb
+# Change variable values
+set variable num = 15
+set var student_age = 25
+set var gpa = 4.0
+
+# Continue and observe changes
+continue
+```
+
+### 3.10 Advanced Debugging Techniques
+```gdb
+# Set breakpoint and continue automatically
+break factorial
+commands 1
+  print n
+  print result  
+  continue
+end
+
+# Show source code around current location
+list
+list -
+
+# Get help on commands
+help break
+help print
+```
+
+### 3.11 GEF-Specific Commands
+```gdb
+# Show process information
+process-status
+
+# Show memory mappings with colors
+vmmap
+
+# Enhanced hexdump
+hexdump byte $rsp 64
+
+# Show stack with colors
+dereference $rsp 10
+
+# Pattern creation for buffer overflow testing
+pattern create 100
+pattern search $rsp
+```
+
+### 3.12 Useful GDB Settings for Learning
+```gdb
+# Set to always show context
+set context-sections "regs code stack"
+
+# Enable pretty printing
+set print pretty on
+
+# Show array contents nicely
+set print array on
+
+# Auto-disassemble
+set disassembly-flavor intel
+```
+
+## Step 4: Sample Debug Session Walkthrough
+
+1. **Start debugging:**
+   ```gdb
+   gdb ./debug_demo
+   b main
+   run
+   ```
+
+2. **Examine initial state:**
+   ```gdb
+   info locals
+   print num
+   print student_name
+   ```
+
+3. **Step through and watch function call:**
+   ```gdb
+   b print_info
+   continue
+   step
+   info args
+   ```
+
+4. **Debug the factorial function:**
+   ```gdb
+   b factorial
+   continue
+   watch result
+   continue    # Will stop when result changes
+   print i
+   print result
+   ```
+
+5. **Examine pointers:**
+   ```gdb
+   print ptr_num
+   print *ptr_num
+   x/dw ptr_num
+   ```
+
+6. **Exit GDB:**
+   ```gdb
+   quit
+   # or:
+   q
+   ```
+
+## Tips for Students:
+
+1. **Always compile with -g flag** for debugging symbols
+2. **Use GEF's colored output** to understand program state better  
+3. **Set breakpoints before running** to control execution flow
+4. **Use 'list' command** to see source code context
+5. **Practice with 'print' and 'x' commands** to examine memory
+6. **Use 'help command'** to learn about specific commands
+7. **Take advantage of GEF's automatic context display**

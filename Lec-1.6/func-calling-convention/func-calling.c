@@ -1,4 +1,4 @@
-//debugme.c
+//func-calling.c
 #include <stdio.h>
 #include <stdlib.h>
 int f2(int a){
