@@ -1,5 +1,5 @@
 /*
-*  Lecture: 1.4
+*  Lecture: 1.6
 *  Instructor: Arif Butt
 */
 #include <stdio.h>
@@ -11,7 +11,7 @@ int main(){
    int ctr = 0;
    while (1){
       ptr = (char *) malloc(MB);
-//      memset(ptr,'\0', MB);
+      memset(ptr,'\0', MB);
       printf("Currently allocating %d MB\n", ++ctr);
    }
    exit(0);

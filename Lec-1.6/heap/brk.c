@@ -1,5 +1,5 @@
 /*
-*  Lecture: 1.4
+*  Lecture: 1.6
 *  Instructor: Arif Butt
 */
 #include <stdio.h>
