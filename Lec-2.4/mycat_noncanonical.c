@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 16
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 */
 #include <stdio.h>
 #include <stdlib.h>

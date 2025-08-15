@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 16
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  mycat.c: Get input from keyboard char by char and idsplay on screen
    usage: change terminal attributes and run this program
 */

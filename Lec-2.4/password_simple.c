@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 16
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  password_simple.c: Input password string from user, if it is correct print appropriate message
 */
 
@@ -18,7 +17,7 @@ int main(int argc, char *argv[]){
 	char *q;
    q = strchr(passwd, '\n');
    *q = '\0';
-	int rv = strcmp(passwd, "pucit");
+	int rv = strcmp(passwd, "kakamanna");
 	if (rv == 0)
 		printf("\nThe password is correct\n");
 	else

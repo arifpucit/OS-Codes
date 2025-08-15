@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 16
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  mywrite.c: Open the terminal file for output and then read keyboard and write to the terminal file
  * shows: a terminal is just a file supporting regular i/o
  * usage: $./a.out /dev/pts/n 
