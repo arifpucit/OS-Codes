@@ -1,5 +1,5 @@
-/* ex6.c
-   Programmer's name: Arif Butt
+/* file_io6.c
+   Instructor: Arif Butt
    This program is an example of reading a file using the system calls read() and write().
    It reads the contents of the file /etc/passwd and displays it on the standard output.
    It uses the open() system call to open the file in read mode, read() to read the contents,

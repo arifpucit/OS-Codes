@@ -1,5 +1,5 @@
-/* ex8.c
-   Programmer's name: Arif Butt
+/* file_io8.c
+   Instructor: Arif Butt
    This program reads the file given on command line 
    and copies its contents in another file whose name is received on cmd line
    prog6 srcfile destfile

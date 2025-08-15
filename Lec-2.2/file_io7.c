@@ -1,5 +1,5 @@
-/* ex7.c
-   Programmer's name: Arif Butt
+/* file_io77.c
+   Instructor: Arif Butt
    This program reads from standard input and writes to a file named "newdatafile.txt".
    It creates the file if that does not exist, truncates it if it does, and opens it in read-write mode.
    The program reads data from standard input and writes it to the file until an end-of-file (EOF) or error occurs.

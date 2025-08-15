@@ -1,4 +1,4 @@
-/* ex4.c
+/* file_io4.c
    This program reads from standard input and writes to standard output.
    It reads up to 255 bytes from standard input and writes them to standard output.
    The program continues to read and write until the end of the input is reached.

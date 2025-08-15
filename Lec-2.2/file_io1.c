@@ -1,5 +1,5 @@
-/* ex1.c
-   Programmer's name: Arif Butt
+/* file_io1
+   Instructor: Arif Butt
    This program reads from standard input and writes to standard output.
 */
 #include <stdlib.h>

@@ -1,5 +1,5 @@
-/* ex2.c
-   Programmer's name: Arif Butt
+/* file_io2.c
+   Instructor: Arif Butt
    This program reads from standard input and writes to standard output.
    The program reads up to 255 bytes from standard input and writes them to standard output.
 */

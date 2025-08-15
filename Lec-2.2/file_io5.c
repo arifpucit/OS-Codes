@@ -1,4 +1,4 @@
-/* ex5.c
+/* file_io5.c
    This program reads from a file named "data.txt" and writes the content to standard output.
    It reads 255 bytes starting from the 5th byte of the file.
    If an error occurs while reading or writing, the program will terminate.
