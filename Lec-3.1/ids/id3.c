@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 17
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 */
 
 #define _GNU_SOURCE

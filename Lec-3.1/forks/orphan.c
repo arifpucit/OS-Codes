@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 18
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Creates an orphan process
 */
 #include <stdio.h>

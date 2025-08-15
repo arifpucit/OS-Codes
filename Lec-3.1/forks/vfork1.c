@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 18
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Proves that after a vfork() call, child execute first and the parent automatically waits, and starts its execution after the child terminates
 */
 #include <stdio.h>

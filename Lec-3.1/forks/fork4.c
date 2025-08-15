@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 17
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Proves that the child inherits the copy of variables of the parent
 */
 

@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 08
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 */
 #include <stdio.h>   //for perror function
 #include <stdlib.h> //for exit and atexit function

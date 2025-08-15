@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 17
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  A hello world program on fork, note the parent executes first, then the shell and then the child
 */
 #include <stdio.h>

@@ -1,8 +1,7 @@
 /*
-*  Video Lecture: 17
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
-*  A tricky example, fork() is called multiple times
+*  Course: Operating Systems
+*  A tricky example, fork() is called multiple times with logical short circuiting AND operator
 */
 
 

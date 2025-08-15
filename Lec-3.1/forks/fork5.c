@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 17
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Proves that both parent and child have their own copy of variables
 */
 

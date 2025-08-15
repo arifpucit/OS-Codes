@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 08
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 */
 #include <stdio.h>   //for perror function
 #include <stdlib.h> //for exit and atexit function
@@ -13,6 +12,6 @@ void exit_handler(){
 int main(){
    atexit(exit_handler);
    printf("Main is done!\n");
-  // return 0; // or exit(0);
-   _exit(0);
+   return 0; // or exit(0);
+  // _exit(0);
 }

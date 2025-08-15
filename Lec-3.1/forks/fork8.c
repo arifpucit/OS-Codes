@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 17
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  A tricky example, fork() is called multiple times
 */
 

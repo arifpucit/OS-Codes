@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 17
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Proves that PPFDT of parent process is inherited in the child process
 *  Proves that both points to the same entry in the SWFT (as cfo is shared)
 */

@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 18
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Proves that after a vfork() call, child run in the address space of parent
 */
 #include <stdio.h>

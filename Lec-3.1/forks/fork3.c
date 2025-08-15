@@ -1,3 +1,9 @@
+/*
+*  Programmer: Arif Butt
+*  Course: Operating Systems
+*  Proves that parent and child execute the same code less the if-else structure
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
