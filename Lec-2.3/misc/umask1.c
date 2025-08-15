@@ -1,5 +1,4 @@
 /*
-*  Video Lecture: 13
 *  Programmer: Arif Butt
 *  Course: System Programming with Linux
 */

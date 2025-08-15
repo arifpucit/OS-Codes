@@ -1,7 +1,7 @@
 /*
-*  Video Lecture: 14
 *  Programmer: Arif Butt
 *  Course: System Programming with Linux
+*  $ ls -f /home/      vs  $ ./a.out /home/
 */
 #include <unistd.h>
 #include <stdio.h>

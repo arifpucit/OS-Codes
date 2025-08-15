@@ -1,3 +1,4 @@
+// $ date +%s will display the number of seconds since unix epoch
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

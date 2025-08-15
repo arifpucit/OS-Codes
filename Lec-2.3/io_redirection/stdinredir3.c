@@ -1,5 +1,4 @@
 /*
-*  Video Lecture: 13
 *  Programmer: Arif Butt
 *  This program demonstrates how to redirect standard input using the open-dup2-close method.
 */

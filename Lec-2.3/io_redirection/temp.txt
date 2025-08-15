@@ -1,0 +1,3 @@
+  // open input and output files
+  int fd1 = open(inputfile, O_RDONLY);
+  int fd2 = open(outputfile,O_WRONLY|O_TRUNC|O_CREAT, 0666);

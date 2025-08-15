@@ -1,5 +1,4 @@
 /*
-*  Video Lecture: 14
 *  Programmer: Arif Butt
 *  Course: System Programming with Linux
 *  filepermissions.c: Receives file name via command line argument and display the nine characters of the permissions on the file

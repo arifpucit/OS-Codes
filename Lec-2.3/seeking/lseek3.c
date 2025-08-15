@@ -1,5 +1,4 @@
 /*
-*  Video Lecture: 13
 *  Programmer: Arif Butt
 *  This program creates a file with holes in it by writing data at specific offsets.
 

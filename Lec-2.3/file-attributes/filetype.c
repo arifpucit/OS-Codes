@@ -1,5 +1,4 @@
 /*
-*  Video Lecture: 14
 *  Programmer: Arif Butt
 *  Course: System Programming with Linux
 *  filetype.c: Receives file name via command line argument and determines the file type

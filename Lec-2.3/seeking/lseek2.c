@@ -1,5 +1,4 @@
 /*
-*  Video Lecture: 13
 *  Programmer: Arif Butt
 *  This program demonstrates the use of lseek() to manipulate the current file offset 
 *  of a file descriptor. It creates a file, writes to it, and uses lseek() to move the

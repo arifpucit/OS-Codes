@@ -1,5 +1,4 @@
 /*
-*  Video Lecture: 13
 *  Programmer: Arif Butt
 *  This program lists the command line arguments passed to it.
 */

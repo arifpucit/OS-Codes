@@ -1,5 +1,4 @@
 /*
-*  Video Lecture: 14
 *  Programmer: Arif Butt
 *  Course: System Programming with Linux
 * fileinfo.c - demonstrates using stat() to obtain
