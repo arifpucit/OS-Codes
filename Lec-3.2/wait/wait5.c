@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 18
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Use bit operators to decipher the status argument of wait() system call
 */
 #include <stdio.h>

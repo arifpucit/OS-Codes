@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 18
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Use of wait() system call and retrieving the exit status
 */
 #include <stdio.h>

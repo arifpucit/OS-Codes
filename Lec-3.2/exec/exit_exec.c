@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 19
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Proof of concept: Exit handlers are not inherited after exec()
 */
 #include <stdio.h>

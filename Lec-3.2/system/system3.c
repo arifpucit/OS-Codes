@@ -1,18 +1,13 @@
 /*
-*  Video Lecture: 19
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
-*  A shell interpreter using system()
+*  Course: Operating Systems
+*  Executing a shell script using system()
 */
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 int main(){
-   char cmd[50];
-   int cpid;
-   do{
-      printf("PUCIT:- ");
-      fgets(cmd, 50,stdin);
-      system(cmd);
-   }while(1);
-   return 0;
+   printf("Executing a script using system from main.\n\n");
+   system("/bin/bash script1.sh");
+   printf("\n\nDone... Bye from main\n");
+   exit(0);
 }

@@ -1,13 +1,12 @@
 /*
-*  Video Lecture: 19
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  Executing a shell command using system()
 */
 #include <stdlib.h>
 #include <stdio.h>
-int main(int argc, char* argv[]){
-   system(argv[1]);
+int main(){
+   system("cal");
    printf("\nDone... Bye\n");
    exit(0);
 }
