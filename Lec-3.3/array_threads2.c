@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  array_threads2.c: The main() receives an integer via command line arg
 *  Creates that much number of child threads
 *  Pass thread number to each thread and it displays that number

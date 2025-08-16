@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  t0.c: main function calls two functions f1() and f2()
 *  f1() prints string PUCIT five times with a delay of 1 sec
 *  f2() prints string ARIF five times with a delay of 1 sec

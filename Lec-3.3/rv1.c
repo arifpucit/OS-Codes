@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  rv1.c: The main() receives two numbers via cmd line arg
 *  Creates two threads and pass one number to each
 *  Each thread computes the nth prime number and the result

@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  id_threads2.c: Displaying the thread IDs
 *  using getpid(), gettid(), and pthread_self()
 *  compile: $ gcc id_threads2.c -lpthread

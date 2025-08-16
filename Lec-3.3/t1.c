@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  t1.c: main thread creates two child threads and join them. 
 *  One thread calls f1() and other calls f2()
 *  f1() prints string PUCIT five times with a delay of 1 sec

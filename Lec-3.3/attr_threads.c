@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  attr_threads.c: Creates a thread with attributes different than default
 *  only change one attribute and that is a detached thread
 *  compile: $ gcc attr_threads.c -lpthread

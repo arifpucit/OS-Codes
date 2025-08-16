@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  t3.c: main thread creates two child threads and join them. 
 *  The main thread pass an integer value to each thred function 
 *  which is the count of the characters to be printed. 

@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  dyn_threads2.c: The main() receives an integer via command line arg
 *  Creates two integer arrays of that size in heap
 *  Get input in the two arrays from user

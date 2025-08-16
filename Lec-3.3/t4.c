@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  t4.c: main thread creates two child threads and join them. 
 *  The main thread pass a structure containing the character 
 *  to be displayed and the count. Both executes concurrently.

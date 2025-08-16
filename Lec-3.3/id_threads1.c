@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  id_threads.1c: main thread creates two child threads 
 *  All the three threads displays their IDs using gettid()
 *  and enter in an infinite loop

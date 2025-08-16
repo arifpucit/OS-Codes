@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  rv2.c: The main() receives two file names via cmd line arg
 *  Creates two threads and pass each a filename
 *  Each thread computes and return the number of xters in the file

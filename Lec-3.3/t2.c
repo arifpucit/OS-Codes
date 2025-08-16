@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 23
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  t2.c: main thread creates two child threads and join them. 
 *  One thread prints 1000 Xs and the other thread prints 800 Os 
 *  and both executes concurrently.
