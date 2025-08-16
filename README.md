@@ -4,7 +4,7 @@
 [![Language](https://img.shields.io/badge/Language-C-orange.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![License](https://img.shields.io/badge/License-Educational-green.svg)](#license)
 
-Welcome to the **Operating Systems Course** repository! This collection contains C program source codes for all sample programs and Proof of Concepts (PoCs) discussed during our undergraduate-level Operating Systems lectures.
+Welcome to the **Operating Systems Course** repository! This collection contains C program source codes containing Proof of Concepts (PoCs) discussed during our undergraduate-level Operating Systems lectures.
 
 ## 📚 About This Repository
 
@@ -46,12 +46,12 @@ Don't just copy-paste the code. Engage with it, modify it, break it, and fix it.
 
 ```
 📦 Operating-Systems-Examples
-├── 📂 Process-Management/
-├── 📂 Memory-Management/
-├── 📂 File-Systems/
-├── 📂 Synchronization/
-├── 📂 Scheduling/
-└── 📂 System-Calls/
+├── 📂 Module 1: (Recap of Assembly, C, Linking, Loading, system calls, make, git, process layout)/
+├── 📂 Module 2: (File System Management)/
+├── 📂 Module 3: (Process Management and Scheduling)/
+├── 📂 Module 4: (IPC)/
+├── 📂 Module 5: (Synchronization and Deadlocks)/
+└── 📂 Module 6: (Memory Management)/
 ```
 
 ## 🤝 Contributing
@@ -103,4 +103,4 @@ Happy Coding! Remember, every expert was once a beginner. Keep practicing, keep 
 
 ⭐ **Star this repository if you find it helpful!**
 
-*Last Updated: 2024*
+*Last Updated: 2025*
