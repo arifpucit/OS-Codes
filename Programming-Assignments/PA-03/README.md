@@ -1,4 +1,5 @@
-# PUFCIT's custom UNIX Shell
+# PUFCIT's custom UNIX Shell.
+# This is the updated read me this is edited by zalaid to fix the issue. 
 
 A simple command-line interpreter (shell) built in C for an Operating Systems course.
 
