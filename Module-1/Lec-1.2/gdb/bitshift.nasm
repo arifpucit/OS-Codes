@@ -1,4 +1,3 @@
-;  COAL Video Lecture: 38
 ;  bitshift.nasm
 ;  Assemble: nasm -felf64 bitshift.nasm
 ;  Link:     ld bitshift.o -o bitshift

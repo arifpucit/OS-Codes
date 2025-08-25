@@ -1,4 +1,3 @@
-;  COAL Video Lecture: 35
 ;  arithmetic.nasm
 ;  Assemble: nasm -felf64 arithmetic.nasm
 ;  Link:     ld arithmetic.o -o arithmetic
@@ -24,7 +23,7 @@ main:
    add qword [var2], rax
    add qword [var2], 0x02
 
-;set / clear / complement carry flag 
+; clear / set / complement carry flag 
    clc
    stc
    cmc

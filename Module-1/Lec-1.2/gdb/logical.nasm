@@ -1,4 +1,3 @@
-;  COAL Video Lecture: 37
 ;  logical.nasm
 ;  Assemble: nasm -felf64 logical.nasm
 ;  Link:     ld mul.o -o logical

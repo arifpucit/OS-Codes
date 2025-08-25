@@ -1,4 +1,3 @@
-;  COAL Video Lecture: 38
 ;  bitrotate.nasm
 ;  Assemble: nasm -felf64 bitrotate.nasm
 ;  Link:     ld bitrotate.o -o bitrotate

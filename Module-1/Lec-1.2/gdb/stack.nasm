@@ -1,4 +1,3 @@
-;  COAL Video Lecture: 33
 ;  stack.nasm
 ;  Assemble: nasm -felf64 stack.nasm
 ;  Link:     ld stack.o -o stack

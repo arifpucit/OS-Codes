@@ -1,4 +1,3 @@
-;  COAL Video Lecture: 33
 ;  movingdata.nasm
 ;  Assemble: nasm -felf64 movingdata.nasm
 ;  Link:     ld movingdata.o -o movingdata
