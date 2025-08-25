@@ -16,5 +16,5 @@ main:
    xor rax, rax ; clear rax as no floating point args to printf
    call printf
 ;make the exit library call
-   mov rdi, 0
+   mov rdi, 5
    call exit

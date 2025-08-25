@@ -4,7 +4,7 @@
 ;  Usage: ./uncondjump
 
 SECTION .data   
-   msg1 db "Study Cyber Security", 0
+   msg1 db "Study Operating Systems Course", 0
    msg2 db "Play Cricket", 0
 
 SECTION .text   
