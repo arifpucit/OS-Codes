@@ -12,15 +12,17 @@ void f4();
 void f5();
 void f6();
 void f7();
+void f8();
 
 int main(){
 //	f1();
-//	f2();
+	f2();
 //	f3();
 //	f4();
-	f5();
+//	f5();
 //	f6();
 //	f7();
+//  f8();
 	return 0;
 }
 
@@ -58,6 +60,14 @@ void f5(){
 	printf("Bye Bye from f5()...\n");
 }
 
+void f6(){
+    char buffer[5];
+    int secret = 12345; // should remain unchanged
+    printf("secret = %d\n", secret);
+    for  (int i = 0; i <= 8; i++)
+        buffer[i]= 'A' + i;
+    printf("secret = %d\n", secret); //134770388
+}
 
 char* getString1(){
 	char msg[100] = "Finding bugs is fun with Arif";
@@ -65,7 +75,7 @@ char* getString1(){
 	return ret;
 }
 
-void f6(){
+void f7(){
 	char * abc = getString1();
 	printf("String: %s\n",abc);
 }
@@ -80,7 +90,7 @@ char* getString2(){
 	return ret;
 }
 
-void f7(){
+void f8(){
 	char * abc = getString2();
 	printf("String: %s\n",abc);
 	free(abc);
