@@ -10,25 +10,26 @@
 *  compile: $ gcc race_processes.c -lpthread
 *  usage: $./a.out 
 */
-#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/types.h>
 #include <sys/wait.h>
-#include <semaphore.h>
-#include <sys/ipc.h>
+#include <sys/types.h>
 #include <sys/shm.h>
+#include <semaphore.h>
+#include <fcntl.h>
 
 void inc();
 void dec();
 long *balance;
+sem_t *sem;
 int main(){
 //balance variable should be located in shared memory
    key_t key1 = ftok("file1", 65);
    int shm_id1=shmget(key1, 8, IPC_CREAT | 0666);
    balance = (long*)shmat(shm_id1, NULL, 0);
    *balance=0;   //initializing balance
+   sem = sem_open("/balance_sem", O_CREAT, 0666, 1);
 
 int cpid = fork();
    if (cpid == 0){
@@ -39,19 +40,31 @@ int cpid = fork();
    else{
        dec();
        waitpid(cpid,NULL,0);
-       printf("Value of balance is: %ld\n", *balance);
+       fprintf(stderr, "Value of balance is: %ld\n", *balance);
        shmdt(balance);
        shmctl(shm_id1, IPC_RMID, NULL);
+       sem_close(sem);
+       sem_unlink("/balance_sem");
        return 0;
    }
 }
 void inc(){
-   for(long i=0;i<100000000;i++){
-		*balance = *balance + 1;
-   }
+   sem_wait(sem);
+   int temp = *balance;
+   usleep(100000);
+   temp = temp + 1;
+   usleep(100000);
+   *balance = temp;
+   sem_post(sem);
+   return;
 }
 void dec(){
-   for(long j=0;j<100000000;j++){
-		*balance = *balance - 1;
-    }
+   sem_wait(sem);
+   int temp = *balance;
+   usleep(100000);
+   temp = temp - 1;
+   usleep(100000);
+   *balance = temp;
+   sem_post(sem);
+   return;
 }

@@ -1,7 +1,6 @@
 /*
-*  Video Lecture: 32
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
+*  Course: Operating Systems
 *  race_serialize.c: The main() creates three threads,
 *  each thread displays a string in a random fashion
 *  compile: $ gcc race_serialize.c -lpthread -D_REENTRANT
@@ -27,14 +26,17 @@ int main() {
    return 0;
 }
 
-void * f1(void * parm){
-   printf(" Arif Butt");
+void * f1(void * arg){
+   fprintf(stderr, "%s", " Arif Butt");
+   pthread_exit(NULL);
 }    
 
-void * f2(void * parm){
-   printf(" fun with");
+void * f2(void * arg){
+   fprintf(stderr, "%s", " fun with");
+   pthread_exit(NULL);
 }    
 
-void * f3(void * parm){
-   printf(" Learning is");
+void * f3(void * arg){
+   fprintf(stderr, "%s", "Learning is");
+   pthread_exit(NULL);
 }    

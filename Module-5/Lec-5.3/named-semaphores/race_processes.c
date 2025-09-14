@@ -10,14 +10,11 @@
 *  compile: $ gcc race_processes.c -lpthread
 *  usage: $./a.out 
 */
-#include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/types.h>
 #include <sys/wait.h>
-#include <semaphore.h>
-#include <sys/ipc.h>
+#include <sys/types.h>
 #include <sys/shm.h>
 
 void inc();
@@ -39,20 +36,25 @@ int cpid = fork();
    else{
        dec();
        waitpid(cpid,NULL,0);
-       printf("Value of balance is: %ld\n", *balance);
+       fprintf(stderr, "Value of balance is: %ld\n", *balance);
        shmdt(balance);
        shmctl(shm_id1, IPC_RMID, NULL);
        return 0;
    }
 }
-
 void inc(){
-   for(long i=0;i<100000000;i++){
-		*balance = *balance + 1;
-   }
+   int temp = *balance;
+   usleep(100000);
+   temp = temp + 1;
+   usleep(100000);
+   *balance = temp;
+   return;
 }
 void dec(){
-   for(long j=0;j<100000000;j++){
-		*balance = *balance - 1;
-    }
+   int temp = *balance;
+   usleep(100000);
+   temp = temp - 1;
+   usleep(100000);
+   *balance = temp;
+   return;
 }

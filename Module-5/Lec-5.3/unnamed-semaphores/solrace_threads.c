@@ -1,12 +1,12 @@
 /*
-*  Video Lecture: 32
 *  Programmer: Arif Butt
-*  Course: System Programming with Linux
-*  race_threads.c: The main() creates two threads,
+*  Course: Operating Systems
+*  solrace_threads.c: (Un-named Semaphores) The main() creates two threads,
 *  one thread execute inc() and other execute dec()
 *  both functions operate on a shared global variable balance
+*  after achieving lock using mutex variable
 *  Finally main thread displays the value of global variable
-*  compile: $ gcc race_threads.c -lpthread
+*  compile: $ gcc solrace_threads.c -lpthread
 *  usage: $./a.out 
 */
 #include <pthread.h>
@@ -16,24 +16,31 @@
 long balance = 0;//global variable
 void * inc(void * arg);
 void * dec(void * arg);
+sem_t s;
 int main(){
+   sem_init(&s, 0, 1); //initializing semaphore
    pthread_t t1, t2;
    pthread_create(&t1, NULL, inc,NULL);
    pthread_create(&t2, NULL, dec,NULL);
    pthread_join(t1,NULL);
    pthread_join(t2,NULL);
+   sem_destroy(&s);
    printf("Value of balance is :%ld\n", balance);
    return 0;
 }
 void * inc(void * arg){
    for(long i=0;i<10000000;i++){
-		balance++;
+      sem_wait(&s);
+	  balance++;
+	  sem_post(&s);
    }
    pthread_exit(NULL);
 }
 void * dec(void * arg){
    for(long j=0;j<10000000;j++){
-		balance--;
+      sem_wait(&s);
+	  balance--;
+	  sem_post(&s);
     }
    pthread_exit(NULL);
 }
