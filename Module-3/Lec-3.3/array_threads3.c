@@ -16,6 +16,7 @@
 #include <math.h>
 #include <unistd.h>
 
+
 void * f1(void *);
 int *arr1;
 int *arr2;
@@ -40,11 +41,17 @@ int main(int argc, char* argv[]){
 
 //allocate memory for size number of thread IDs on heap
    pthread_t* tid =  (pthread_t*)malloc(sizeof(pthread_t)*size);
-//create the threads and join them
-   for(int i=0; i<size; i++){
-      pthread_create(&tid[i], NULL, f1, (void*)&i);
-      pthread_join(tid[i], NULL);
-}
+   int *ids = malloc(sizeof(int) * size);
+
+   for (int i = 0; i < size; i++) {
+     ids[i] = i;
+     pthread_create(&tid[i], NULL, f1, &ids[i]);
+   }
+   for (int i = 0; i < size; i++)
+     pthread_join(tid[i], NULL);
+
+   
+   free(ids);    
    printf("\nI am main thread.Sum of the two arrays is: \n");
    for(int i=0; i<size; i++)
 	   printf("%d\n",result[i]);
