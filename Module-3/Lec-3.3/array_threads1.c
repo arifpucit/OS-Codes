@@ -21,6 +21,8 @@ int main(int argc, char* argv[]){
    pthread_t tids[5];
    for(int i=0; i<5; i++){
       pthread_create(&tids[i], NULL, f1, (void*)msg[i]);
+   }
+   for(int i=0; i<5; i++){
       pthread_join(tids[i], NULL);
    }
    printf("main(): Reporting that all child threads have terminated\n");
