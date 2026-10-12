@@ -51,10 +51,10 @@ int main(int argc, char* argv[]){
      pthread_join(tid[i], NULL);
 
    
-   free(ids);    
    printf("\nI am main thread.Sum of the two arrays is: \n");
    for(int i=0; i<size; i++)
 	   printf("%d\n",result[i]);
+   free(arr1); free(arr2);free(result);free(tid);free(ids);    
    return 0;
 }
 
