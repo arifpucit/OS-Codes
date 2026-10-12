@@ -17,6 +17,7 @@
 #include <string.h>
 
 
+
 void * f1(void * arg);
 int main(int argc, char* argv[]){
    if(argc != 2){
@@ -25,10 +26,18 @@ int main(int argc, char* argv[]){
    }
    int ctr = atoi(argv[1]);
    pthread_t* tid =  (pthread_t*)malloc(sizeof(pthread_t)*ctr);
-   for(int i=0;i<ctr;i++){
-      pthread_create(&tid[i], NULL, f1, (void*)&i);
+
+
+   int *ids = malloc(sizeof(int) * ctr);
+   for(int i = 0; i < ctr; i++){
+      ids[i] = i;
+      pthread_create(&tid[i], NULL, f1, &ids[i]);   // each thread gets its own slot
+   }
+   
+   for(int i = 0; i < ctr; i++)
       pthread_join(tid[i], NULL);
-}
+
+   free(ids);   // only after all joins
    printf("main(): Reporting that all child threads have terminated\n");
    exit(0);
 }
